@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+        <div class="mb-3">
+            <p> User name: {{username}}</p>
+            <p>Cash: {{total}}</p>
+        </div>
+        {%for i in range(0, cant)%}
+        <div class="mb-3">
+            <p class="form-control mx-auto w-auto">Symbol: {{rows[i]["symbol"]}} Quantity: {{rows[i]["quantity"]}}</p>
+        </div>
+        {%endfor%}
+{% endblock %}

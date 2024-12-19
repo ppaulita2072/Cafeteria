@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <form action="/quoted">
+        <div class="mb-3">
+            <p>
+                price:{{'%0.2f'| format(price)}}:
+            </p>
+        </div>
+    </form>
+{% endblock %}
